@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pastel Digital Clock</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-wrapper">
+    <div class="clock-container">
+      <div id="clock" class="clock">00:00:00 AM</div>
+      <div id="date" class="date"></div>
+      <button id="toggleFormatBtn" class="btn">Toggle 12/24 Hour</button>
+      <div class="alarm-group">
+        <input type="time" id="alarmTime" class="time-picker" />
+        <button id="setAlarmBtn" class="btn">Set Alarm</button>
+      </div>
+      <div id="alarmStatus" class="alarm-status"></div>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
